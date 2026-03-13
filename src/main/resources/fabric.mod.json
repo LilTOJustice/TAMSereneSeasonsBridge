@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "tamsereneseasonsbridge",
+  "version": "${version}",
+  "name": "TAMSereneSeasonsBridge",
+  "description": "Ecliptic Seasons compatibility bridge for True Adaptive Music",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/tamsereneseasonsbridge/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "liltojustice.tamsereneseasonsbridge.client.TAMSereneSeasonsBridgeClient"
+    ]
+  },
+  "mixins": [
+    "tamsereneseasonsbridge.mixins.json",
+    {
+      "config": "tamsereneseasonsbridge.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "*"
+  }
+}
