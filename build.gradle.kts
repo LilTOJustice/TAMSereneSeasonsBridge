@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.3.10"
-    id("fabric-loom") version "1.15-SNAPSHOT"
+    kotlin("jvm") version "2.0.20"
+    id("fabric-loom") version "1.10.5"
     id("maven-publish")
 }
 
@@ -14,7 +14,7 @@ base {
     archivesName.set(project.property("archives_base_name") as String)
 }
 
-val targetJavaVersion = 21
+val targetJavaVersion = 17
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
     withSourcesJar()
@@ -32,9 +32,6 @@ loom {
 }
 
 fabricApi {
-    configureDataGeneration {
-        client = true
-    }
 }
 
 repositories {
@@ -52,8 +49,8 @@ dependencies {
     modImplementation("net.fabricmc:fabric-language-kotlin:${project.property("kotlin_loader_version")}")
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
-    modImplementation("curse.maven:serene-seasons-291874:7532845")
-    modImplementation("curse.maven:true-adaptive-music-1208639:7741793")
+    modImplementation("curse.maven:serene-seasons-291874:6398228")
+    modImplementation("curse.maven:true-adaptive-music-1208639:7750304")
 }
 
 tasks.processResources {
