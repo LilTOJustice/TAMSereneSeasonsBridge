@@ -50,7 +50,7 @@ jobs:
           modrinth-id: "${{env.MODRINTH_ID}}"
           modrinth-token: "${{env.MODRINTH_TOKEN}}"
 
-          name: "TAM Ecliptic Seasons Bridge for Minecraft ${{env.MINECRAFT_VERSION}}"
+          name: "TAM Serene Seasons Bridge ${{env.MOD_VERSION}}"
           version: "${{env.MOD_VERSION}}"
           version-type: release
 
