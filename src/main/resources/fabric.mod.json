@@ -21,6 +21,6 @@
     "fabric-api": "*",
     "minecraft": "*",
     "sereneseasons": "*",
-    "trueadaptivemusic": "*"
+    "trueadaptivemusicapi": "1.1.3"
   }
 }

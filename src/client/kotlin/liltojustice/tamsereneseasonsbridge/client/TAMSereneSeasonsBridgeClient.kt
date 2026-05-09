@@ -1,10 +1,10 @@
 package liltojustice.tamsereneseasonsbridge.client
 
-import liltojustice.trueadaptivemusic.client.TAMClient
+import liltojustice.trueadaptivemusicapi.TAMAPI
 import net.fabricmc.api.ClientModInitializer
 
-class TAMSereneSeasonsBridgeClient : ClientModInitializer {
+class TAMSereneSeasonsBridgeClient: ClientModInitializer {
     override fun onInitializeClient() {
-        TAMClient.registerPredicate("season", SeasonPredicate::class)
+        TAMAPI.registerPredicateType(SeasonPredicate)
     }
 }

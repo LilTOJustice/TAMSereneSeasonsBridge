@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.0.20"
-    id("fabric-loom") version "1.10.5"
+    kotlin("jvm") version "2.3.0"
+    id("fabric-loom") version "1.15-SNAPSHOT"
     id("maven-publish")
 }
 
@@ -50,7 +50,7 @@ dependencies {
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
     modImplementation("curse.maven:serene-seasons-291874:6398228")
-    modImplementation("curse.maven:true-adaptive-music-1208639:7750304")
+    modImplementation("curse.maven:trueadaptivemusicapi-1514598:8051435")
 }
 
 tasks.processResources {
