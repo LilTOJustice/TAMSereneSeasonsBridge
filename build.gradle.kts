@@ -50,7 +50,7 @@ dependencies {
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
     modImplementation("curse.maven:serene-seasons-291874:6398228")
-    modImplementation("curse.maven:trueadaptivemusicapi-1514598:8051435")
+    modImplementation("curse.maven:trueadaptivemusicapi-1514598:8067838")
 }
 
 tasks.processResources {
